@@ -1,9 +1,15 @@
-import "./App.css";
-import { useEffect } from "react";
-import Map from "https://js.arcgis.com/4.22/@arcgis/core/Map.js";
-import MapView from "https://js.arcgis.com/4.22/@arcgis/core/views/MapView.js";
-import FeatureLayer from "https://js.arcgis.com/4.22/@arcgis/core/layers/FeatureLayer.js";
-import BasemapToggle from "https://js.arcgis.com/4.22/@arcgis/core/widgets/BasemapToggle.js"
+// Import the CSS file
+require("./App.css");
+
+// Import React's useEffect
+const { useEffect } = require("react");
+
+// Import ArcGIS modules
+const Map = require("https://js.arcgis.com/4.22/@arcgis/core/Map.js");
+const MapView = require("https://js.arcgis.com/4.22/@arcgis/core/views/MapView.js");
+const FeatureLayer = require("https://js.arcgis.com/4.22/@arcgis/core/layers/FeatureLayer.js");
+const BasemapToggle = require("https://js.arcgis.com/4.22/@arcgis/core/widgets/BasemapToggle.js");
+
 
 function Mapping() {
   useEffect(() => {
